@@ -1,0 +1,3 @@
+[submodule "baidu"]
+	path = baidu
+	url = https://github.com/baidu/iot-edge-c-sdk.git
