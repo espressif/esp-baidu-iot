@@ -6,9 +6,9 @@
 #include "tlsio_mbedtls.h"
 #include "azure_c_shared_utility/xlogging.h"
 
-static const char *const ntpServer = "pool.ntp.org";
+static const char* const ntpServer = "pool.ntp.org";
 
-int SNTP_SetServerName(const char *serverName);
+int SNTP_SetServerName(const char* serverName);
 int SNTP_Init();
 void SNTP_Deinit();
 
@@ -31,6 +31,7 @@ int platform_init(void)
         result = 0;
     }
 
+
     return result;
 }
 
@@ -52,4 +53,5 @@ void platform_deinit(void)
     SNTP_Deinit();
 
     // The tlsio adapter for this platform does not need (or support) deinitialization
+
 }

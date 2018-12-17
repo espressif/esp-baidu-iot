@@ -27,6 +27,7 @@ int platform_init(void)
         result = 0;
     }
 
+
     return result;
 }
 
